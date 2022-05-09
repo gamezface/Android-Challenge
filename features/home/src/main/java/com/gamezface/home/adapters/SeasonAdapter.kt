@@ -13,7 +13,7 @@ class SeasonAdapter(
     private val onClick: (Episode) -> Unit
 ) : ListAdapter<Pair<Long?, List<Episode>>, SeasonAdapter.SeasonViewHolder>(TaskDiffCallBack()) {
 
-    private val episodeAdapter by lazy { EpisodeAdapter(onClick) }
+    private lateinit var episodeAdapter : EpisodeAdapter
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SeasonViewHolder =
         SeasonViewHolder(
@@ -29,6 +29,7 @@ class SeasonAdapter(
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bindData(item: Pair<Long?, List<Episode>>) {
             with(binding) {
+                episodeAdapter = EpisodeAdapter(onClick)
                 recyclerViewEpisodes.adapter = episodeAdapter
                 episodeAdapter.submitList(item.second)
                 textViewTitle.text = itemView.context?.getString(R.string.season, item.first)
