@@ -13,7 +13,7 @@ Technologies and concepts used:
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) (
   ViewModel + LiveData + Room + Navigation)
 - Dependency injection using [Hilt 2.41](https://dagger.dev/hilt/)
-- Unit tests using [Junit](https://junit.org/junit4/)
+- Unit tests using [Junit](https://junit.org/junit4/) and [Mockk](https://mockk.io/ANDROID.html)
 
 ## Setup
 
