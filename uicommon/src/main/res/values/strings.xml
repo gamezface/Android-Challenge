@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Simple Base App</string>
+    <string name="app_name" translatable="false">Android Challenge</string>
     <string name="ok" translatable="false">OK</string>
     <string name="something_went_wrong">Something went wrong</string>
     <string name="service_unavailable">Service unavailable.</string>
@@ -22,4 +22,7 @@
     <string name="episodes">Episodes</string>
     <string name="no_favorites_found">No favorites found.</string>
     <string name="cast">Cast</string>
+    <string name="biometric_authentication">Biometric authentication</string>
+    <string name="touch_the_fingerprint_sensor">Touch the fingerprint sensor</string>
+    <string name="insert_pin">Insert PIN</string>
 </resources>

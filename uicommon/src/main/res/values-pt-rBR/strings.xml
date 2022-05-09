@@ -21,4 +21,7 @@
     <string name="episodes">Episódios</string>
     <string name="no_favorites_found">Sem favoritos encontrados.</string>
     <string name="cast">Elenco</string>
+    <string name="biometric_authentication">Autenticação biométrica</string>
+    <string name="touch_the_fingerprint_sensor">Toque no sensor de impressão digital</string>
+    <string name="insert_pin">Inserir PIN</string>
 </resources>
