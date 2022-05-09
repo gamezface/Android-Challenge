@@ -57,7 +57,7 @@
 
     <fragment
         android:id="@+id/castDetailsFragment"
-        android:name="com.gamezface.home.fragments.CastDetailsFragment"
+        android:name="com.gamezface.home.fragments.details.CastDetailsFragment"
         android:label="CastDetailsFragment"
         tools:layout="@layout/fragment_cast_details">
 
@@ -73,7 +73,7 @@
 
     <fragment
         android:id="@+id/showDetailsFragment"
-        android:name="com.gamezface.home.fragments.ShowDetailsFragment"
+        android:name="com.gamezface.home.fragments.details.ShowDetailsFragment"
         android:label="DetailsFragment"
         tools:layout="@layout/fragment_show_details">
 
@@ -96,7 +96,7 @@
 
     <fragment
         android:id="@+id/episodeDetailsFragment"
-        android:name="com.gamezface.home.fragments.EpisodeDetailsFragment"
+        android:name="com.gamezface.home.fragments.details.EpisodeDetailsFragment"
         android:label="EpisodeDetailsFragment"
         tools:layout="@layout/fragment_episode_details" />
 
