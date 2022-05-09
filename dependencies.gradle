@@ -22,6 +22,8 @@ ext {
     mockkVersion = '1.11.0'
     roomVersion = '2.3.0'
     biometricVersion = "1.2.0-alpha04"
+    securityVersion = "1.0.0"
+    cryptoVersion = "1.1.0-alpha03"
 
     debugBaseUrl = "\"https://api.tvmaze.com/\""
     releaseBaseUrl = "\"https://api.tvmaze.com/\""
@@ -61,7 +63,9 @@ ext {
             okHttp                  : "com.squareup.okhttp3:okhttp:$okHttpVersion",
             okHttpLog               : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
             //Biometric
-            biometric               : "androidx.biometric:biometric-ktx:$biometricVersion"
+            biometric               : "androidx.biometric:biometric-ktx:$biometricVersion",
+            security                : "androidx.security:security-crypto:$securityVersion",
+            crypto                  : "androidx.security:security-crypto:$cryptoVersion"
     ]
 
     testDependencies = [
@@ -80,7 +84,6 @@ ext {
             dependencies.daggerHilt,
             dependencies.navigationUiKtx,
             dependencies.navigationFragmentKtx,
-            dependencies.biometric,
     ]
 
     featuresDependencies = [
@@ -133,6 +136,7 @@ ext {
     ]
 
     uiCommonDependencies = [
+            dependencies.appCompat,
             dependencies.material,
             dependencies.glide,
             dependencies.coreKtx,
@@ -142,6 +146,12 @@ ext {
             dependencies.lifecycleViewModelKtx,
             dependencies.lifecycleLiveDataKtx,
             dependencies.daggerHilt,
+    ]
+
+    securityDependencies = [
+            dependencies.biometric,
+            dependencies.security,
+            dependencies.crypto,
     ]
 
 }

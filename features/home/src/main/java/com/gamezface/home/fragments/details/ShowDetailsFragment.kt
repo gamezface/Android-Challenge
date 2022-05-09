@@ -1,4 +1,4 @@
-package com.gamezface.home.fragments
+package com.gamezface.home.fragments.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,7 +15,7 @@ import com.gamezface.home.R
 import com.gamezface.home.adapters.CastAdapter
 import com.gamezface.home.adapters.SeasonAdapter
 import com.gamezface.home.databinding.FragmentShowDetailsBinding
-import com.gamezface.presentation.viewmodels.home.ShowDetailsViewModel
+import com.gamezface.presentation.viewmodels.home.details.ShowDetailsViewModel
 import com.gamezface.uicommon.extensions.fromHtml
 import com.gamezface.uicommon.extensions.loadImage
 import com.gamezface.uicommon.extensions.show

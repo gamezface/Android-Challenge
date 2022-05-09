@@ -13,6 +13,7 @@ import com.gamezface.domain.show.entity.Show
 import com.gamezface.home.R
 import com.gamezface.home.adapters.ShowAdapter
 import com.gamezface.home.databinding.FragmentHomeBinding
+import com.gamezface.home.fragments.details.ID
 import com.gamezface.presentation.state.ViewState
 import com.gamezface.presentation.viewmodels.home.HomeViewModel
 import com.gamezface.uicommon.extensions.showErrorModal

@@ -1,4 +1,4 @@
-package com.gamezface.presentation.viewmodels.home
+package com.gamezface.presentation.viewmodels.home.details
 
 import androidx.lifecycle.LiveData
 import com.gamezface.domain.cast.entity.CastDetails

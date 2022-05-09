@@ -27,6 +27,7 @@ dependencies {
     implementation project(':core')
     implementation project(':uicommon')
     implementation project(':features:home')
+    implementation project(':features:pin')
 
     appImplDependencies.each { v -> implementation v }
 }

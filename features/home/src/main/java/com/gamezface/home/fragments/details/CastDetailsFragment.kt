@@ -1,4 +1,4 @@
-package com.gamezface.home.fragments
+package com.gamezface.home.fragments.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,7 +14,7 @@ import com.gamezface.domain.show.entity.Show
 import com.gamezface.home.R
 import com.gamezface.home.adapters.ShowAdapter
 import com.gamezface.home.databinding.FragmentCastDetailsBinding
-import com.gamezface.presentation.viewmodels.home.CastDetailsViewModel
+import com.gamezface.presentation.viewmodels.home.details.CastDetailsViewModel
 import com.gamezface.uicommon.extensions.loadImage
 import com.gamezface.uicommon.extensions.showErrorModal
 import com.gamezface.uicommon.progress.ProgressDialog

@@ -8,4 +8,5 @@ dependencies {
     implementation project(':domain')
 
     dataDependencies.each { v -> implementation v }
+    securityDependencies.each { v -> implementation v }
 }

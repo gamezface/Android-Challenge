@@ -15,4 +15,7 @@
     <!-- CardView -->
     <dimen name="card_elevation">4dp</dimen>
     <dimen name="card_corner_radius">4dp</dimen>
+
+    <!-- Pin -->
+    <dimen name="pin_dot_size">24dp</dimen>
 </resources>

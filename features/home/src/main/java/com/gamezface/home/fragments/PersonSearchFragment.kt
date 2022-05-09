@@ -13,6 +13,7 @@ import com.gamezface.domain.show.entity.Search
 import com.gamezface.home.R
 import com.gamezface.home.adapters.SearchAdapter
 import com.gamezface.home.databinding.FragmentPersonSearchBinding
+import com.gamezface.home.fragments.details.PERSON
 import com.gamezface.presentation.state.ViewState
 import com.gamezface.presentation.viewmodels.home.SearchViewModel
 import com.gamezface.uicommon.extensions.hide

@@ -13,6 +13,7 @@ import com.gamezface.domain.show.entity.Show
 import com.gamezface.home.R
 import com.gamezface.home.adapters.ShowAdapter
 import com.gamezface.home.databinding.FragmentFavoritesBinding
+import com.gamezface.home.fragments.details.ID
 import com.gamezface.presentation.viewmodels.home.FavoritesViewModel
 import com.gamezface.uicommon.extensions.hide
 import com.gamezface.uicommon.extensions.show

@@ -1,4 +1,4 @@
-package com.gamezface.home.fragments
+package com.gamezface.home.fragments.details
 
 import android.os.Bundle
 import android.view.LayoutInflater

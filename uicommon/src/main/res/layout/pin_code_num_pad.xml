@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/viewPin1"
+            android:layout_width="@dimen/pin_dot_size"
+            android:layout_height="@dimen/pin_dot_size"
+            android:background="@drawable/pin_code_selector" />
+
+        <View
+            android:id="@+id/viewPin2"
+            android:layout_width="@dimen/pin_dot_size"
+            android:layout_height="@dimen/pin_dot_size"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="@drawable/pin_code_selector" />
+
+        <View
+            android:id="@+id/viewPin3"
+            android:layout_width="@dimen/pin_dot_size"
+            android:layout_height="@dimen/pin_dot_size"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="@drawable/pin_code_selector" />
+
+        <View
+            android:id="@+id/viewPin4"
+            android:layout_width="@dimen/pin_dot_size"
+            android:layout_height="@dimen/pin_dot_size"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="@drawable/pin_code_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutPin">
+
+        <Button
+            android:id="@+id/buttonPassCode1"
+            style="@style/ButtonPin"
+            android:text="@string/pin_num_pad_one" />
+
+        <Button
+            android:id="@+id/buttonPassCode2"
+            style="@style/ButtonPin"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@string/pin_num_pad_two" />
+
+        <Button
+            android:id="@+id/buttonPassCode3"
+            style="@style/ButtonPin"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@string/pin_num_pad_three" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutFirst">
+
+        <Button
+            android:id="@+id/buttonPassCode4"
+            style="@style/ButtonPin"
+            android:text="@string/pin_num_pad_four" />
+
+        <Button
+            android:id="@+id/buttonPassCode5"
+            style="@style/ButtonPin"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@string/pin_num_pad_five" />
+
+        <Button
+            android:id="@+id/buttonPassCode6"
+            style="@style/ButtonPin"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@string/pin_num_pad_six" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutSecond">
+
+        <Button
+            android:id="@+id/buttonPassCode7"
+            style="@style/ButtonPin"
+            android:text="@string/pin_num_pad_seven" />
+
+        <Button
+            android:id="@+id/buttonPassCode8"
+            style="@style/ButtonPin"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@string/pin_num_pad_eight" />
+
+        <Button
+            android:id="@+id/buttonPassCode9"
+            style="@style/ButtonPin"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@string/pin_num_pad_nine" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutThird">
+
+        <Button
+            android:id="@+id/buttonPassCode0"
+            style="@style/ButtonPin"
+            android:text="@string/pin_num_pad_zero" />
+
+        <ImageButton
+            android:id="@+id/buttonPassCodeBackspace"
+            style="@style/ButtonPin"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:contentDescription="@string/pin_num_pad_backspace"
+            android:src="@drawable/ic_backspace" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

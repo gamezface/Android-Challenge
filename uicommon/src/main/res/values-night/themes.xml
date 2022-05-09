@@ -8,4 +8,10 @@
         <item name="android:windowBackground">@drawable/drawable_app_window_background</item>
     </style>
 
+    <style name="ButtonPin" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">@style/TextAppearance.Title</item>
+    </style>
 </resources>

@@ -25,6 +25,9 @@
         <activity
             android:name=".features.HomeActivity"
             android:exported="true" />
+        <activity
+            android:name=".features.PinActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

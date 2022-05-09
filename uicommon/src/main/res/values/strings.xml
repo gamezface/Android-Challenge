@@ -25,4 +25,16 @@
     <string name="biometric_authentication">Biometric authentication</string>
     <string name="touch_the_fingerprint_sensor">Touch the fingerprint sensor</string>
     <string name="insert_pin">Insert PIN</string>
+
+    <string name="pin_num_pad_one" translatable="false">1</string>
+    <string name="pin_num_pad_two" translatable="false">2</string>
+    <string name="pin_num_pad_three" translatable="false">3</string>
+    <string name="pin_num_pad_four" translatable="false">4</string>
+    <string name="pin_num_pad_five" translatable="false">5</string>
+    <string name="pin_num_pad_six" translatable="false">6</string>
+    <string name="pin_num_pad_seven" translatable="false">7</string>
+    <string name="pin_num_pad_eight" translatable="false">8</string>
+    <string name="pin_num_pad_nine" translatable="false">9</string>
+    <string name="pin_num_pad_zero" translatable="false">0</string>
+    <string name="pin_num_pad_backspace">Backspace</string>
 </resources>
