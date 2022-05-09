@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="something_went_wrong">Algo deu errado</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="service_unavailable">Serviço indisponivel</string>
+    <string name="network_error">"Não foi possível se conectar. Por favor verifique sua conexão com a internet e tente novamente.</string>
+    <string name="generic_error_message">Ocorreu um erro. Por favor entre novamente mais tarde.</string>
+    <string name="home_menu">Início</string>
+    <string name="search_menu">Pesquisa</string>
+    <string name="favorites_menu">Favoritos</string>
+    <string name="series">"Séries "</string>
+    <string name="search_by_title">Pesquise por título</string>
+    <string name="search_by_name">Pesquise por nome</string>
+    <string name="sorry">Desculpe</string>
+    <string name="we_did_not_find_results_for">Não encontramos resultados para \"%1$s\"</string>
+    <string name="currently_airing">Em Exibição</string>
+    <string name="schedule">Cronograma:</string>
+    <string name="average_runtime">Tempo médio:</string>
+    <string name="season">Temporada %d</string>
+    <string name="episode">Episódio %d</string>
+    <string name="episodes">Episódios</string>
+    <string name="no_favorites_found">Sem favoritos encontrados.</string>
+    <string name="cast">Elenco</string>
+</resources>

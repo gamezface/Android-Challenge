@@ -1,0 +1,31 @@
+plugins {
+    id 'dagger.hilt.android.plugin'
+    id 'com.android.library'
+}
+apply from: '../common.gradle'
+
+def globalConfiguration = rootProject.ext
+
+android {
+
+    defaultConfig {
+        buildConfigField "String", "BASE_URL", "\"\""
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "BASE_URL", globalConfiguration.debugBaseUrl
+        }
+        release {
+            buildConfigField "String", "BASE_URL", globalConfiguration.releaseBaseUrl
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(':domain')
+    implementation project(':data')
+    
+    coreDependencies.each { v -> implementation v }
+}

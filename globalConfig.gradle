@@ -1,0 +1,9 @@
+ext {
+    buildTool = "30.0.3"
+    androidMinSdkVersion = 23
+    androidTargetSdkVersion = 31
+    androidCompileSdkVersion = 31
+    androidApplicationId = 'com.gamezface.androidchallenge'
+    androidVersionCode = 1
+    androidVersionName = '1.0.0'
+}

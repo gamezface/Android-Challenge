@@ -1,0 +1,11 @@
+plugins {
+    id 'com.android.library'
+}
+apply from: '../common.gradle'
+
+dependencies {
+
+    implementation project(':domain')
+
+    dataDependencies.each { v -> implementation v }
+}

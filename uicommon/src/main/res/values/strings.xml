@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">Simple Base App</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="service_unavailable">Service unavailable.</string>
+    <string name="try_again">Try again</string>
+    <string name="network_error">Unable to connect. Please check your network connection and try again.</string>
+    <string name="generic_error_message">An error occurred. Please try again later.</string>
+    <string name="home_menu">Home</string>
+    <string name="search_menu">Search</string>
+    <string name="favorites_menu">Favorites</string>
+    <string name="series">Series</string>
+    <string name="search_by_title">Search by title</string>
+    <string name="search_by_name">Search by name</string>
+    <string name="sorry">Sorry</string>
+    <string name="we_did_not_find_results_for">We did not find results for \"%1$s\"</string>
+    <string name="currently_airing">Currently Airing</string>
+    <string name="schedule">Schedule:</string>
+    <string name="average_runtime">Average Runtime:</string>
+    <string name="season">Season %d</string>
+    <string name="episode">Episode %d</string>
+    <string name="episodes">Episodes</string>
+    <string name="no_favorites_found">No favorites found.</string>
+    <string name="cast">Cast</string>
+</resources>

@@ -1,0 +1,48 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+def globalConfiguration = rootProject.ext
+
+kapt {
+    useBuildCache = true
+    javacOptions {
+        option("-Xmaxerrs", 500)
+    }
+}
+
+android {
+
+    buildToolsVersion globalConfiguration.buildTool
+
+    compileSdkVersion globalConfiguration.androidCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.androidMinSdkVersion
+        targetSdkVersion globalConfiguration.androidTargetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+    kotlinDependencies.each { v -> implementation v }
+    appTestDependencies.each { v -> testImplementation v }
+    kaptDependencies.each { v -> kapt v }
+}

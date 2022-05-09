@@ -1,0 +1,9 @@
+apply plugin: 'com.android.library'
+apply from: '../common.gradle'
+
+dependencies {
+    implementation project(':domain')
+
+    uiCommonDependencies.each { v -> implementation v }
+    appAnnotationProcessorDependencies.each { v -> annotationProcessor v }
+}

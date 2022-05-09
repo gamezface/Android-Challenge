@@ -1,0 +1,15 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidChallenge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:windowBackground">@drawable/drawable_app_window_background</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AndroidChallenge">
+        <item name="colorControlActivated">@android:color/holo_orange_light</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+</resources>

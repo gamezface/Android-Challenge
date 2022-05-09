@@ -1,0 +1,19 @@
+plugins {
+    id 'dagger.hilt.android.plugin'
+    id 'com.android.library'
+}
+apply from: '../../common.gradle'
+
+android {
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':uicommon')
+    implementation project(':presentation')
+
+    featuresDependencies.each { v -> implementation v }
+}
