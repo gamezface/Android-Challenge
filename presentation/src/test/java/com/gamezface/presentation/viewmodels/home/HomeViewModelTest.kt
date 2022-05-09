@@ -33,7 +33,7 @@ class HomeViewModelTest : BaseViewModelTest() {
     }
 
     @Test
-    fun onQueryChangeTest() {
+    fun loadShowsTest() {
         assertNull(viewModel.getShows().value)
 
         runBlocking {

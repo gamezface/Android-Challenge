@@ -33,7 +33,7 @@ class SearchViewModelTest : BaseViewModelTest() {
     }
 
     @Test
-    fun onQueryChangeTest() {
+    fun searchTest() {
         assertNull(viewModel.getSearchResult().value)
 
         viewModel.handleQueryChange("John")
