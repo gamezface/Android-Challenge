@@ -20,3 +20,7 @@ Technologies and concepts used:
 This application was built
 with [Android Studio Bumblebee | 2021.1.1 Patch 3](https://developer.android.com/studio/releases#bumblebee)
 using the Android Gradle Plugin 7.1.3, Gradle 7.2 and Kotlin 1.6.21.
+
+#Apk 
+
+Here is the sample [APK](https://github.com/gamezface/Android-Challenge/blob/main/distribution/app-debug.apk) in case for visual tests
