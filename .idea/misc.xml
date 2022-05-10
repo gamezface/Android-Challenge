@@ -54,10 +54,12 @@
         <entry key="..\:/Users/Anderson/Desktop/Android-Challenge/uicommon/src/main/res/drawable/pin_code_selector.xml" value="0.284" />
         <entry key="..\:/Users/Anderson/Desktop/Android-Challenge/uicommon/src/main/res/layout/layout_pin_code_numpad.xml" value="0.4553227875160325" />
         <entry key="..\:/Users/Anderson/Desktop/Android-Challenge/uicommon/src/main/res/layout/pin_code_num_pad.xml" value="0.1911073108165883" />
+        <entry key="features/home/src/main/res/layout/fragment_cast_details.xml" value="0.10208333333333333" />
+        <entry key="features/pin/src/main/res/layout/fragment_pin.xml" value="0.10208333333333333" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

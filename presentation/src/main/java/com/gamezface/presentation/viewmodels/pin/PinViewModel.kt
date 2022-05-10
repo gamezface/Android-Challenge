@@ -1,6 +1,5 @@
 package com.gamezface.presentation.viewmodels.pin
 
-import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -12,14 +11,21 @@ import javax.inject.Inject
 
 @HiltViewModel
 class PinViewModel @Inject constructor(
-    @VisibleForTesting val sharedPreferences: EncryptSharedPreferences
+    private val sharedPreferences: EncryptSharedPreferences
 ) : ViewModel() {
+
+    private val _registeredPinLiveEvent = SingleLiveEvent<String>()
+    fun getRegisteredPin(): LiveData<String> = _registeredPinLiveEvent
 
     private val pinCode = MutableLiveData<String>()
     fun getPin(): LiveData<String> = pinCode
 
     private val _authenticated = SingleLiveEvent<Boolean>()
     fun getAuthentication(): LiveData<Boolean> = _authenticated
+
+    fun verifyPinRegistered() {
+        _registeredPinLiveEvent.postValue(sharedPreferences.getSharedPreferences().getString(PIN_CODE_KEY, ""))
+    }
 
     val numPadListener = object : NumPadListener {
         override fun onNumberClicked(number: Char) {

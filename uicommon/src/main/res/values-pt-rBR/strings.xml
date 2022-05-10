@@ -24,5 +24,7 @@
     <string name="biometric_authentication">Autenticação biométrica</string>
     <string name="touch_the_fingerprint_sensor">Toque no sensor de impressão digital</string>
     <string name="insert_pin">Inserir PIN</string>
+    <string name="insert_your_pin">Insira o seu PIN</string>
+    <string name="insert_a_new_pin">Insira um novo PIN</string>
     <string name="pin_num_pad_backspace" >Apagar</string>
 </resources>

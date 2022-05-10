@@ -25,6 +25,8 @@
     <string name="biometric_authentication">Biometric authentication</string>
     <string name="touch_the_fingerprint_sensor">Touch the fingerprint sensor</string>
     <string name="insert_pin">Insert PIN</string>
+    <string name="insert_your_pin">Insert your PIN</string>
+    <string name="insert_a_new_pin">Insert a new PIN</string>
 
     <string name="pin_num_pad_one" translatable="false">1</string>
     <string name="pin_num_pad_two" translatable="false">2</string>

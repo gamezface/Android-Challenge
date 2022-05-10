@@ -33,6 +33,11 @@ class PinViewModelTest : BaseViewModelTest() {
                 ArgumentMatchers.anyString()
             )
         ).thenReturn("1234")
+        Mockito.`when`(
+            encryptSharedPreferences.getSharedPreferences().edit()
+        ).thenAnswer {
+
+        }
     }
 
     @Test

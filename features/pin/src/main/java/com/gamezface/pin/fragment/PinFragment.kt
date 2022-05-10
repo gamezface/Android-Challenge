@@ -43,12 +43,16 @@ class PinFragment : Fragment() {
         initListeners()
         initObservers()
         setupBiometric()
+        viewModel.verifyPinRegistered()
         verifyBiometricAuth()
     }
 
     private fun initObservers() {
         viewModel.getPin().observe(viewLifecycleOwner) {
             binding.pinCodeNumPad.onPinChanged(it)
+        }
+        viewModel.getRegisteredPin().observe(viewLifecycleOwner) {
+            binding.textViewTitle.text = if (it.isNullOrEmpty()) getString(R.string.insert_a_new_pin) else getString(R.string.insert_your_pin)
         }
         viewModel.getAuthentication().observe(viewLifecycleOwner) { authenticated ->
             if (authenticated) handleSuccessAuth()

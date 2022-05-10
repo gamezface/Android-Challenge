@@ -20,7 +20,7 @@ class CastDetailsViewModel @Inject constructor(
     var id: Long = -1L
 
     suspend fun loadDetails() {
-        _detailsLiveEvent.value.takeUnless { it?.data != null || id == -1L }.run {
+        takeUnless { id == -1L }?.run {
             handleWork({ repository.getCastDetails(id) }, _detailsLiveEvent)
         }
     }

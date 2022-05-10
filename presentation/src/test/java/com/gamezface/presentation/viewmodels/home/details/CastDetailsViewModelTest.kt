@@ -16,54 +16,39 @@ import org.mockito.kotlin.capture
 import org.mockito.kotlin.times
 import org.mockito.kotlin.verify
 
-class ShowDetailsViewModelTest : BaseViewModelTest() {
+class CastDetailsViewModelTest : BaseViewModelTest() {
 
     @Captor
     lateinit var longCaptor: ArgumentCaptor<Long>
 
     private val viewModel by lazy {
-        ShowDetailsViewModel(showRepository)
+        CastDetailsViewModel(castDetailsRepository)
     }
 
     @Before
     override fun setup() {
         super.setup()
         runBlocking {
-            Mockito.`when`(showRepository.getDetails(any())).thenReturn(mockk())
+            Mockito.`when`(castDetailsRepository.getCastDetails(any())).thenReturn(mockk())
         }
     }
 
     @Test
-    fun loadShowsTest() {
-        assertNull(viewModel.getShowDetails().value)
+    fun loadCastDetailsTest() {
+        assertNull(viewModel.getCastDetails().value)
+        assertEquals(viewModel.id, -1L)
 
         runBlocking {
             viewModel.loadDetails()
-            verify(showRepository, times(0)).getDetails(any())
+            verify(castDetailsRepository, times(0)).getCastDetails(any())
             assertEquals(viewModel.id, -1L)
-            assertNull(viewModel.getFavorite().value)
-
-            viewModel.handleFavoriteCheck(true)
-            verify(showRepository, times(0)).insertFavorite(any())
-            assertTrue(viewModel.getFavorite().value == true)
-
-            viewModel.handleFavoriteCheck(false)
-            verify(showRepository, times(0)).removeFavorite(any())
-            assertTrue(viewModel.getFavorite().value == false)
 
             viewModel.id = 1L
             viewModel.loadDetails()
-            verify(showRepository, times(1)).getDetails(capture(longCaptor))
+            verify(castDetailsRepository, times(1)).getCastDetails(capture(longCaptor))
             assertEquals(longCaptor.value, 1L)
-            assertNotNull(viewModel.getShowDetails().value)
+            assertNotNull(viewModel.getCastDetails().value)
 
-            viewModel.handleFavoriteCheck(true)
-            verify(showRepository, times(1)).insertFavorite(any())
-            assertTrue(viewModel.getFavorite().value == true)
-
-            viewModel.handleFavoriteCheck(false)
-            verify(showRepository, times(1)).removeFavorite(any())
-            assertTrue(viewModel.getFavorite().value == false)
         }
     }
 
